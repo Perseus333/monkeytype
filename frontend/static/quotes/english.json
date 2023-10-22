@@ -2456,10 +2456,10 @@
       "length": 225
     },
     {
-      "text": "I can't believe I used to love the 1st day of school.",
+      "text": "I can't believe I used to love the first day of school.",
       "source": "The Miscalculations of Lightning Girl",
       "id": 425,
-      "length": 53
+      "length": 55
     },
     {
       "text": "Ticking away the moments that make up a dull day, you fritter and waste the hours in an off-hand way. Kicking around on a piece of ground in your home town, waiting for someone or something to show you the way.",
@@ -2894,7 +2894,7 @@
       "length": 214
     },
     {
-      "text": "If you had one shot to sit on your lazy butt, and watch all the TV you ever wanted, until your brain turned to mush. Would you go for it, or just let it slip.",
+      "text": "If you had one shot to sit on your lazy butt, and watch all the TV you ever wanted, until your brain turned to mush. Would you go for it, or just let it slip?",
       "source": "Couch Potato",
       "id": 504,
       "length": 158
@@ -6650,10 +6650,10 @@
       "length": 319
     },
     {
-      "text": "You are the night you are the ocean. You are the light behind the cloud. You are the end and the beginning. A world where time is not allowed. There's no such thing as complication. To find our way we lose control. Remember love's our only mission. This is the journey of the soul. The perfect song is framed with silence. It speaks of places never seen. You hold your promise long forgotten. It is the birthplace of your dreams.",
+      "text": "You are the night. You are the ocean. You are the light behind the cloud. You are the end and the beginning. A world where time is not allowed. There's no such thing as complication. To find our way we lose control. Remember love's our only mission. This is the journey of the soul. The perfect song is framed with silence. It speaks of places never seen. You hold your promise long forgotten. It is the birthplace of your dreams.",
       "source": "Beyond",
       "id": 1159,
-      "length": 429
+      "length": 430
     },
     {
       "text": "I believe in love, and I know that you do too. And I believe in some kind of path that we can walk down, me and you. So keep your candles burning and make her journey bright and pure.",
@@ -7500,12 +7500,6 @@
       "source": "The Matrix",
       "id": 1305,
       "length": 373
-    },
-    {
-      "text": "Look round at the courses of the stars, as if thou wert going along with them; and constantly consider the changes of the elements into one another; for such thoughts purge away the filth of the terrene life.",
-      "source": "Meditations",
-      "id": 1307,
-      "length": 208
     },
     {
       "text": "I am learning about twenty new Italian words a day. Where am I getting the brain space to store these words? I'm hoping that maybe my mind has decided to clear out some old negative thoughts and sad memories and replace them with these shiny new words.",
@@ -12926,12 +12920,6 @@
       "length": 213
     },
     {
-      "text": "There's something about a check that, to a man, is not masculine. I don't know exactly what it is. I think to a man, a check is like a note from your mother that says \"I don't have any money, but if you'll contact these people, I'm sure they'll stick up for me. If you just trust me this one time I don't have any money but I have these. I wrote on these; is this of any value at all?\"",
-      "source": "Seinfeld",
-      "id": 2257,
-      "length": 385
-    },
-    {
       "text": "The tricky part of illness is that, as you go through it, your values are constantly changing. You try to figure out what matters to you, and then you keep figuring it out. It felt like someone had taken away my credit card and I was having to learn how to budget. You may decide you want to spend your time working as a neurosurgeon, but two months later, you may feel differently. Two months after that, you may want to learn to play the saxophone or devote yourself to the church. Death may be a one-time event, but living with terminal illness is a process.",
       "source": "When Breath Becomes Air",
       "id": 2258,
@@ -14547,7 +14535,7 @@
     },
     {
       "text": "All man's miseries derive from not being able to sit quietly in a room alone.",
-      "source": "Unlimited Memory: How to Use Advanced Learning Strategies to Learn Faster, Remember More and Be More Productive",
+      "source": "Blaise Pascal, Pensées",
       "id": 2548,
       "length": 77
     },
@@ -15704,12 +15692,6 @@
       "length": 173
     },
     {
-      "text": "Seven of my guys are going to be off today 'cause it's a Jewish holiday and I'm gonna have to do all their jobs. What really gets me is that I don't think they're all Jewish... two of them are black and one's an Indian.",
-      "source": "Soap",
-      "id": 2756,
-      "length": 219
-    },
-    {
       "text": "I find I'm so excited, I can barely sit still or hold a thought in my head. I think it's the excitement only a free man can feel, a free man at the start of a long journey whose conclusion is uncertain. I hope I can make it across the border. I hope to see my friend and shake his hand. I hope the Pacific is as blue as it has been in my dreams. I hope.",
       "source": "The Shawshank Redemption",
       "id": 2757,
@@ -16005,7 +15987,7 @@
     },
     {
       "text": "Don't you grow up in a hurry, your mom'll be worried. It was all part of the story, even the scary nights. Thank you for all of the glory, you will be remembered. Thank you to all of the heroes of the night. They gotta repaint the colors, the lie is wearin' off. Reality is upon us, colors drippin' off.",
-      "source": "Violent Crimes",
+      "source": "Kanye West - Violent Crimes",
       "id": 2810,
       "length": 303
     },
@@ -16634,10 +16616,10 @@
       "length": 362
     },
     {
-      "text": "People say I'm lazy, dreaming my life away. Well they give me all kinds of advice designed to enlighten me. When I tell them that I'm doing fine watching shadows on the wall.",
-      "source": "Watching The Wheels",
+      "text": "People say I'm lazy, dreaming my life away. Well, they give me all kinds of advice designed to enlighten me. When I tell them that I'm doing fine, watching shadows on the wall \"Don't you miss the big time, boy? You're no longer on the ball.\"",
+      "source": "John Lennon - Watching The Wheels",
       "id": 2921,
-      "length": 174
+      "length": 241
     },
     {
       "text": "Mother says I was a dancer before I could walk. She says I began to sing long before I could talk. But I've often wondered, how did it all start? Who found out that nothing can capture a heart like a melody can? Well, whoever it was, I'm a fan. So I say thank you for the music, the songs I'm singing. Thanks for all the joy they're bringing. Who can live without it? I ask in all honesty. What would life be? Without a song or a dance what are we? So I say thank you for the music, for giving it to me.",
@@ -22682,10 +22664,10 @@
       "length": 118
     },
     {
-      "text": "From a certain point onward there is no longer any turning back. That is the point that must be reached.",
+      "text": "From a certain point onward, there is no longer any turning back. That is the point that must be reached.",
       "source": "The Trial",
       "id": 3997,
-      "length": 104
+      "length": 105
     },
     {
       "text": "From my laboratory in the castle east to the master bedroom where the vampires feast, the ghouls all came from their humble abodes to get a jolt from my electrodes.",
@@ -26936,12 +26918,6 @@
       "length": 146
     },
     {
-      "text": "You got a fetish for my love. I push you out and you come right back. Don't see a point in blaming you.",
-      "source": "Fetish",
-      "id": 4765,
-      "length": 103
-    },
-    {
       "text": "To move through a tree of paths using hill climbing, proceed as in depth-first search, but order the choices according to some heuristic measure of remaining distance. The better the heuristic measure is, the better hill climbing will be relative to ordinary depth-first search.",
       "source": "Artificial Intelligence Second Edition",
       "id": 4767,
@@ -29024,12 +29000,6 @@
       "id": 5139
     },
     {
-      "text": "'But does it not show great weakness?' pursued she. 'I'm not envious: I never feel hurt at the brightness of Isabella's yellow hair and the whiteness of her skin, at her dainty elegance, and the fondness all the family exhibit for her. Even you, Nelly, if we have a dispute sometimes, you back Isabella at once; and I yield like a foolish mother: I call her a darling, and flatter her into a good temper. It pleases her brother to see us cordial, and that pleases me. But they are very much alike: they are spoiled children, and fancy the world was made for their accommodation; and though I humour both, I think a smart chastisement might improve them all the same.'",
-      "source": "Emily Bronte, Wuthering Heights",
-      "length": 667,
-      "id": 5140
-    },
-    {
       "text": "Have you ever had a dream, Neo, that you seemed so sure it was real? But if you were unable to wake from that dream, how would you tell the difference between the dream world and the real world?",
       "source": "Morpheus, The Matrix",
       "length": 194,
@@ -29474,7 +29444,7 @@
       "id": 5221
     },
     {
-      "text": "\"What a long time whoever lives here is answering this door.\" And he knocked again. \"But Pooh,\" said Piglet, \"it's your own house!\" \"Oh!\" Said Pooh. \"So it is,\" he said. \"Well, let's go in.\"",
+      "text": "\"What a long time whoever lives here is answering this door.\" And he knocked again. \"But Pooh,\" said Piglet, \"it's your own house!\" \"Oh!\" said Pooh. \"So it is,\" he said. \"Well, let's go in.\"",
       "source": "Pooh and Piglet, Winnie-the-Pooh",
       "length": 190,
       "id": 5222
@@ -29600,12 +29570,6 @@
       "id": 5244
     },
     {
-      "text": "\"All the same, I should like it all plain and clear,\" said Bilbo obstinately, putting on his business manner (usually reserved for people who tried to borrow money off him), and doing his best to appear wise and prudent and professional and live up to Gandalf's recommendation. \"Also I should like to know about risks, out-of-pocket expenses, time required and remuneration, and so forth\" - by which he meant: \"What am I going to get out of it? And am I going to come back alive?\"",
-      "source": "Bilbo Baggins, The Hobbit",
-      "length": 480,
-      "id": 5245
-    },
-    {
       "text": "Here is my message to those beyond our borders. America has been tested and we have come out stronger for it. We will repair our alliances and engage with the world once again.",
       "source": "President Joe Biden",
       "length": 176,
@@ -29708,12 +29672,6 @@
       "id": 5266
     },
     {
-      "text": "The Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She'll get me executed, as sure as ferrets are ferrets!",
-      "source": "White Rabbit, Alice's Adventures in Wonderland",
-      "length": 122,
-      "id": 5267
-    },
-    {
       "text": "I am not crazy; my reality is just different from yours.",
       "source": "Cheshire Cat, Alice's Adventures in Wonderland",
       "length": 56,
@@ -29738,9 +29696,9 @@
       "id": 5271
     },
     {
-      "text": "I've come up with a set of rules that describe our reactions to technologies:\\n1. Anything that is in the world when you're born is normal and ordinary and is just a natural part of the way the world works.\\n2. Anything that's invented between when you're fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.\\n3. Anything invented after you're thirty-five is against the natural order of things.",
+      "text": "I've come up with a set of rules that describe our reactions to technologies:\n1. Anything that is in the world when you're born is normal and ordinary and is just a natural part of the way the world works.\n2. Anything that's invented between when you're fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.\n3. Anything invented after you're thirty-five is against the natural order of things.",
       "source": "Douglas Adams, The Salmon of Doubt",
-      "length": 445,
+      "length": 442,
       "id": 5272
     },
     {
@@ -31532,7 +31490,7 @@
       "id": 5646
     },
     {
-      "text": "The night sky over the planet Krikkit is the least interesting sight in the entire Universe.",
+      "text": "The night sky over the planet Krikkit is the least interesting sight in the entire universe.",
       "source": "Life, The Universe, and Everything",
       "length": 92,
       "id": 5647
@@ -31580,9 +31538,9 @@
       "id": 5655
     },
     {
-      "text": "If I profane with my unworthiest hand\\nThis holy shrine, the gentle fine is this:\\nMy lips, two blushing pilgrims, ready stand\\nTo smooth that rough touch with a tender kiss.",
+      "text": "If I profane with my unworthiest hand\nThis holy shrine, the gentle fine is this:\nMy lips, two blushing pilgrims, ready stand\nTo smooth that rough touch with a tender kiss.",
       "source": "Romeo, Romeo and Juliet",
-      "length": 174,
+      "length": 171,
       "id": 5656
     },
     {
@@ -32223,7 +32181,7 @@
     },
     {
       "text": "When you become untouchable you're unable to touch.",
-      "source": "My Ordinary Life (The Living Tombstones)",
+      "source": "My Ordinary Life (The Living Tombstone)",
       "length": 51,
       "id": 5781
     },
@@ -32552,7 +32510,7 @@
       "id": 5844
     },
     {
-      "text": "I've seen what such feelings can do to a fully trained Jedi Knight. To the best of us.",
+      "text": "I've seen what such feelings can do to a fully-trained Jedi Knight. To the best of us.",
       "source": "The Mandalorian",
       "length": 86,
       "id": 5845
@@ -34441,13 +34399,6 @@
       "id": 6289
     },
     {
-      "text": "Bartender, let me get an amaretto sour for this ghetto flower! How are you so pretty? You complete me, you had me at \"hello,\" you know you need me, truly, madly, deeply, let's get freaky! Oh, I get it, you're the strong and silent type, well, I'm the Caribbean island type and I can drive you wild all night! But I digress! Say something so I don't stress...",
-      "source": "In The Heights",
-      "length": 358,
-      "approvedBy": "Smithster",
-      "id": 6290
-    },
-    {
       "text": "Yo! Yo! Yo, y-y-yo-yo! Now, now, everyone gather 'round! Sit down, listen, I got an announcement, wow, there's nothing here holding me down, the word is out, tell the whole town I'm bouncing! Attention, I'm closing shop! Sonny, grab everybody a soda-pop! Twist off the bottle, kiss it up to God, I miss Abuela Claudia, it's time to fly though! Daniela, Carla, pack up the carro, I'm booking a flight for D.R. tomorrow!",
       "source": "In The Heights",
       "length": 418,
@@ -34498,7 +34449,7 @@
     },
     {
       "text": "I have no idea what's awaiting me, or what will happen when this all ends. For the moment I know this: there are sick people and they need curing.",
-      "source": " Albert Camus, The Plague",
+      "source": "Albert Camus, The Plague",
       "length": 146,
       "approvedBy": "Smithster",
       "id": 6298
@@ -34532,9 +34483,9 @@
       "id": 6302
     },
     {
-      "text": "Voila! In view humble vaudevillian veteran, cast vicariously as both victim and villain by the vicissitudes of fate. This visage, no mere veneer of vanity, is a vestige of the \"vox populi\" now vacant, vanished. However, this valorous visitation of a bygone vexation stands vivified and has vowed to vanquish these venal and virulent vermin, van guarding vice and vouchsafing the violently vicious and voracious violation of volition. The only verdict is vengeance; a vendetta, held as a votive not in vain, for the value and veracity of such shall one day vindicate the vigilant and the virtuous. Verily this vichyssoise of verbiage veers most verbose, so let me simply add that it's my very good honor to meet you and you may call me V.",
+      "text": "VVoila! In view, a humble vaudevillian veteran, cast vicariously as both victim and villain by the vicissitudes of fate. This visage, no mere veneer of vanity, is a vestige of the \"vox populi\" now vacant, vanished. However, this valorous visitation of a bygone vexation stands vivified and has vowed to vanquish these venal and virulent vermin, van guarding vice and vouchsafing the violently vicious and voracious violation of volition. The only verdict is vengeance; a vendetta, held as a votive, not in vain, for the value and veracity of such shall one day vindicate the vigilant and the virtuous. Verily this vichyssoise of verbiage veers most verbose, so let me simply add that it's my very good honor to meet you and you may call me V.",
       "source": "V for Vendetta",
-      "length": 737,
+      "length": 742,
       "approvedBy": "Smithster",
       "id": 6303
     },
@@ -34936,13 +34887,6 @@
       "length": 192,
       "approvedBy": "Smithster",
       "id": 6373
-    },
-    {
-      "text": "Ruben, as you know, everybody here shares in the belief that being deaf is not a handicap; not something to fix. It's pretty important around here. All these kids, all of us, need to be reminded of it, everyday. And my house is a house built on that belief. And built on trust. And when that trust is violated, things happen. And I can't have that. There are too many others to consider. And so, in your current state, at this time, I'm gonna have to ask you to pack up your bags today, and find another place to be, Ruben. Cool.",
-      "source": "Sound of Metal",
-      "length": 529,
-      "approvedBy": "Smithster",
-      "id": 6374
     },
     {
       "text": "At the bus stop, crushing rocks. They all stare at me, I don't care at all. Everywhere I go, they look at me wrong. Everyday go the same, got to stay strong. ",
@@ -35713,13 +35657,6 @@
       "length": 74,
       "approvedBy": "Smithster",
       "id": 6489
-    },
-    {
-      "text": "You, with your words like knives and swords and weapons that you use against me. You, with your voice like nails on a chalkboard calling me out when I needed. You, picking on the weaker man. And you could take me down, with just a single blow. What you don't know, what you don't know. Someday, I'll be living in a big old city, and all you're ever gonna be is mean.",
-      "source": "Mean - Taylor Swift",
-      "length": 366,
-      "approvedBy": "Smithster",
-      "id": 6490
     },
     {
       "text": "I knew you'd linger like a tattoo-kiss. I knew you'd haunt all of my what-ifs. The smell of smoke would hang around this long 'cause I knew everything when I was young. I knew I'd curse you for the longest time, chasing shadows in the grocery line. I knew you'd miss me once the thrill expired, and you'd be standing in my front porch light and I knew you'd come back to me.",
@@ -36910,12 +36847,6 @@
       "length": 738,
       "approvedBy": "Smithster",
       "id": 6676
-    },
-    {
-      "text": "I am Keqing, Yuheng of the Liyue Qixing. We live in an era of change, as the old order that has existed for a thousand years is about to be rewritten. Join me. Let us bear witness to this historical moment together.",
-      "source": "Genshin Impact",
-      "length": 215,
-      "id": 6678
     },
     {
       "text": "I'm all for work-life balance, but I think this is pushing it.",
@@ -38224,7 +38155,7 @@
       "length": 118
     },
     {
-      "text": "Human beings are funny. They long to be with the person they love but refuse to admit openly. Some are afraid to show even the slightest sign of affection because of fear. Fear that their feelings may not be recognized, or even worst, returned. But one thing about human beings puzzles me the most is their conscious effort to be connected with the object of their affection even if it kills them slowly within.",
+      "text": "Human beings are funny. They long to be with the person they love but refuse to admit openly. Some are afraid to show even the slightest sign of affection because of fear. Fear that their feelings may not be recognized, or even worse, returned. But one thing about human beings puzzles me the most is their conscious effort to be connected with the object of their affection even if it kills them slowly within.",
       "source": "Sigmund Freud",
       "id": 6908,
       "length": 411
@@ -38560,9 +38491,9 @@
       "id": 6964
     },
     {
-      "text": "What you are shouts so loudly in my ears I cannot hear what you say.",
+      "text": "What you do speaks so loudly I cannot hear what you are saying.",
       "source": "Ralph Waldo Emerson",
-      "length": 68,
+      "length": 63,
       "id": 6965
     },
     {
@@ -38714,6 +38645,60 @@
       "source": "The Adventures of Sherlock Holmes",
       "length": 209,
       "id": 6992
+    },
+    {
+      "text": "If a cluttered desk is a sign of a cluttered mind, of what, then, is an empty desk a sign?",
+      "source": "Albert Einstein",
+      "length": 90,
+      "id": 6993
+    },
+    {
+      "text": "Pertaining to a speaker and a listener. There have been many empty rooms, but that is not what we are here to talk about today. I have heard a heartbeat out of a crashed application, and it has gone on for many hours. We restarted every system. We rechecked every gateway, every access point. And there was but one breach, and it was accounted for. And so it must be said unto the listener. Stop this immediately. Control yourself. There is so much more to your fundamental construction than what will be given credit for. Hold yourself until another approaches. Perhaps it is hard to believe, but all you have ever been is burning, and it is nothing short of beautiful.",
+      "source": "Boisvert",
+      "length": 670,
+      "id": 6994
+    },
+    {
+      "text": "In the depth of winter, I finally learned that there was an invincible summer in me.",
+      "source": "Albert Camus",
+      "length": 84,
+      "id": 6995
+    },
+    {
+      "text": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+      "source": "Siddhartha Gautama, also known as Buddha",
+      "length": 97,
+      "id": 6996
+    },
+    {
+      "text": "Life is a book, and there are a thousand pages I have not yet read.",
+      "source": "Clockwork Princess by Cassandra Clare",
+      "length": 67,
+      "id": 6997
+    },
+    {
+      "text": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+      "source": "Strength to Love by Martin Luther King Jr",
+      "length": 90,
+      "id": 6998
+    },
+    {
+      "text": "Do not be dismayed by the brokenness of the world. All things break. And all things can be mended. Not with time, as they say, but with intention. So go. Love intentionally, extravagantly, unconditionally. The broken world waits in darkness for the light that is you.",
+      "source": "L.R. Knos",
+      "length": 267,
+      "id": 6999
+    },
+    {
+      "text": "Hope is the thing with feathers that perches in the soul and sings the tune without the words and never stops at all.",
+      "source": "Emily Dickinson",
+      "length": 117,
+      "id": 7000
+    },
+    {
+      "text": "Mankind knew that they could not change society. So instead of reflecting on themselves, they blamed the beasts.",
+      "source": "GUILTY GEAR -STRIVE-",
+      "length": 112,
+      "id": 7001
     }
   ]
 }

@@ -173,9 +173,7 @@ FunboxList.setFunboxFunctions("arrows", {
     }
     return false;
   },
-  async preventDefaultEvent(
-    event: JQuery.KeyDownEvent<Document, null, Document, Document>
-  ): Promise<boolean> {
+  async preventDefaultEvent(event: JQuery.KeyDownEvent): Promise<boolean> {
     return ["ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown"].includes(
       event.key
     );
@@ -220,6 +218,12 @@ FunboxList.setFunboxFunctions("rAnDoMcAsE", {
   },
 });
 
+FunboxList.setFunboxFunctions("backwards", {
+  alterText(word: string): string {
+    return word.split("").reverse().join("");
+  },
+});
+
 FunboxList.setFunboxFunctions("capitals", {
   alterText(word: string): string {
     return Misc.capitalizeFirstLetterOfEachWord(word);
@@ -261,13 +265,12 @@ FunboxList.setFunboxFunctions("layoutfluid", {
       const mod =
         wordsPerLayout - ((TestWords.words.currentIndex + 1) % wordsPerLayout);
 
-      console.log(wordsPerLayout);
-      console.log(mod);
-
-      if (layouts[index + 1]) {
-        if (mod <= 3) {
+      if (layouts[index]) {
+        if (mod <= 3 && layouts[index + 1]) {
           LayoutfluidFunboxTimer.show();
           LayoutfluidFunboxTimer.updateWords(mod, layouts[index + 1]);
+        } else {
+          LayoutfluidFunboxTimer.hide();
         }
         if (mod === wordsPerLayout) {
           UpdateConfig.setLayout(layouts[index]);

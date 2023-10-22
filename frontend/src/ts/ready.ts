@@ -12,18 +12,17 @@ import { Workbox } from "workbox-window";
 import * as FunboxList from "./test/funbox/funbox-list";
 //@ts-ignore
 import Konami from "konami";
+import { log } from "./controllers/analytics-controller";
+import { envConfig } from "./constants/env-config";
 
-if (Misc.isLocalhost()) {
-  $("head title").text("localhost");
-  $("#bottom .version .text").text("localhost");
-  $("#bottom #versionGroup").removeClass("hidden");
+if (Misc.isDevEnvironment()) {
+  $("footer .currentVersion .text").text("localhost");
   $("body").prepend(
-    `<a class='button configureAPI' href='http://localhost:5005/configure/' target='_blank' aria-label="Configure API" data-balloon-pos="right"><i class="fas fa-fw fa-server"></i></a>`
+    `<a class='button configureAPI' href='${envConfig.backendUrl}/configure/' target='_blank' aria-label="Configure API" data-balloon-pos="right"><i class="fas fa-fw fa-server"></i></a>`
   );
 } else {
   Misc.getLatestReleaseFromGitHub().then((v) => {
-    $("#bottom .version .text").text(v);
-    $("#bottom #versionGroup").removeClass("hidden");
+    $("footer .currentVersion .text").text(v);
     NewVersionNotification.show(v);
   });
 }
@@ -39,7 +38,7 @@ $(document).ready(() => {
 
   CookiePopup.check();
 
-  $("body").css("transition", "all .25s, transform .05s");
+  $("body").css("transition", "background .25s, transform .05s");
   if (Config.quickRestart === "tab" || Config.quickRestart === "esc") {
     $("#restartTestButton").addClass("hidden");
   }
@@ -75,7 +74,7 @@ $(document).ready(() => {
     );
   }, 500); //this approach will probably bite me in the ass at some point
 
-  $("#centerContent")
+  $("#contentWrapper")
     .css("opacity", "0")
     .removeClass("hidden")
     .stop(true, true)
@@ -90,7 +89,7 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     // disabling service workers on localhost - they dont really work well with local development
     // and cause issues with hot reloading
-    if (Misc.isLocalhost()) {
+    if (Misc.isDevEnvironment()) {
       navigator.serviceWorker.getRegistrations().then(function (registrations) {
         for (const registration of registrations) {
           // if (registration.scope !== "https://monkeytype.com/")
@@ -144,3 +143,15 @@ if ("serviceWorker" in navigator) {
     }
   });
 }
+
+window.onerror = function (message, url, line, column, error): void {
+  log("error", {
+    error: error?.stack ?? "",
+  });
+};
+
+window.onunhandledrejection = function (e): void {
+  log("error", {
+    error: e.reason.stack ?? "",
+  });
+};

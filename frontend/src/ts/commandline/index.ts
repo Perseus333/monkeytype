@@ -218,8 +218,18 @@ function updateSuggested(): void {
     });
   }
   showFound();
-  activeIndex = 0;
+
+  // display background hover effect for selected language
+  const scrollTarget = $(".suggestions .entry .icon i.fa-check");
+  const entryIndex = scrollTarget.parent().parent().attr("index");
+  if (entryIndex !== undefined) {
+    activeIndex = parseInt(entryIndex);
+  } else {
+    activeIndex = 0;
+  }
+
   updateActiveEntry();
+  keepActiveEntryInView();
 }
 
 function show(): void {
@@ -698,7 +708,7 @@ $(document).on("keydown", (e) => {
         (e.key === "p" || e.key === "n" || e.key === "j" || e.key === "k"))
     ) {
       e.preventDefault();
-      $("#commandLineWrapper #commandLine .suggestions .entry").unbind(
+      $("#commandLineWrapper #commandLine .suggestions .entry").off(
         "mouseenter mouseleave"
       );
       const entries = $(".suggestions .entry");
@@ -787,7 +797,7 @@ $(".pageTest").on("click", "#testModesNotice .textButton", (event) => {
   }
 });
 
-$("#bottom").on("click", ".leftright .right .current-theme", (e) => {
+$("footer").on("click", ".leftright .right .current-theme", (e) => {
   if (e.shiftKey) {
     if (!Config.customTheme) {
       if (Auth?.currentUser) {

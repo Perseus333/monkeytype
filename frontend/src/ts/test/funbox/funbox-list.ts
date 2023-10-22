@@ -246,6 +246,15 @@ const list: MonkeyTypes.FunboxMetadata[] = [
     info: "Go back to the 1980s",
     properties: ["noLigatures"],
   },
+  {
+    name: "backwards",
+    info: "...sdrawkcab epyt ot yrt woN",
+    properties: [
+      "noLigatures",
+      "conflictsWithSymmetricChars",
+      "wordOrder:reverse",
+    ],
+  },
 ];
 
 export function getAll(): MonkeyTypes.FunboxMetadata[] {

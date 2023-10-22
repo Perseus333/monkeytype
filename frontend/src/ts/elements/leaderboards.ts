@@ -160,7 +160,7 @@ function updateFooter(lb: LbKey): void {
   }
 
   if (
-    !Misc.isLocalhost() &&
+    !Misc.isDevEnvironment() &&
     (DB.getSnapshot()?.typingStats?.timeTyping ?? 0) < 7200
   ) {
     $(`#leaderboardsWrapper table.${side} tfoot`).html(`
@@ -734,7 +734,7 @@ languageSelector.on("select2:select", (e) => {
 
 let leftScrollEnabled = true;
 
-$("#leaderboardsWrapper #leaderboards .leftTableWrapper").scroll((e) => {
+$("#leaderboardsWrapper #leaderboards .leftTableWrapper").on("scroll", (e) => {
   if (!leftScrollEnabled) return;
   const elem = $(e.currentTarget);
   if (Math.round(elem.scrollTop() as number) <= 50) {
@@ -744,7 +744,7 @@ $("#leaderboardsWrapper #leaderboards .leftTableWrapper").scroll((e) => {
 
 const debouncedRequestMore = debounce(500, requestMore);
 
-$("#leaderboardsWrapper #leaderboards .leftTableWrapper").scroll((e) => {
+$("#leaderboardsWrapper #leaderboards .leftTableWrapper").on("scroll", (e) => {
   if (!leftScrollEnabled) return;
   const elem = $(e.currentTarget);
   if (
@@ -757,7 +757,7 @@ $("#leaderboardsWrapper #leaderboards .leftTableWrapper").scroll((e) => {
 
 let rightScrollEnabled = true;
 
-$("#leaderboardsWrapper #leaderboards .rightTableWrapper").scroll((e) => {
+$("#leaderboardsWrapper #leaderboards .rightTableWrapper").on("scroll", (e) => {
   if (!rightScrollEnabled) return;
   const elem = $(e.currentTarget);
   if (Math.round(elem.scrollTop() as number) <= 50) {
@@ -765,7 +765,7 @@ $("#leaderboardsWrapper #leaderboards .rightTableWrapper").scroll((e) => {
   }
 });
 
-$("#leaderboardsWrapper #leaderboards .rightTableWrapper").scroll((e) => {
+$("#leaderboardsWrapper #leaderboards .rightTableWrapper").on("scroll", (e) => {
   const elem = $(e.currentTarget);
   if (
     Math.round(elem[0].scrollHeight - (elem.scrollTop() as number)) <=
@@ -881,15 +881,9 @@ $(document).on("keydown", (event) => {
   }
 });
 
-$("#top #menu").on("click", ".textButton", (e) => {
+$("header nav").on("click", ".textButton", (e) => {
   if ($(e.currentTarget).hasClass("leaderboards")) {
     show();
-  }
-});
-
-$(document).on("keypress", "#top #menu .textButton", (e) => {
-  if (e.key === "Enter") {
-    $(e.currentTarget).trigger("click");
   }
 });
 

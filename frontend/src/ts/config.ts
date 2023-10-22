@@ -15,6 +15,7 @@ import {
   canSetConfigWithCurrentFunboxes,
   canSetFunboxWithConfig,
 } from "./test/funbox/funbox-validation";
+import { reloadAfter } from "./utils/misc";
 
 export let localStorageConfig: MonkeyTypes.Config;
 
@@ -136,8 +137,13 @@ export function setMode(mode: MonkeyTypes.Mode, nosave?: boolean): boolean {
   return true;
 }
 
-export function setPlaySoundOnError(val: boolean, nosave?: boolean): boolean {
-  if (!isConfigValueValid("play sound on error", val, ["boolean"])) {
+export function setPlaySoundOnError(
+  val: MonkeyTypes.PlaySoundOnError,
+  nosave?: boolean
+): boolean {
+  if (
+    !isConfigValueValid("play sound on error", val, [["off", "1", "2", "3"]])
+  ) {
     return false;
   }
 
@@ -360,6 +366,7 @@ export function setStopOnError(
   config.stopOnError = soe;
   if (config.stopOnError !== "off") {
     config.confidenceMode = "off";
+    saveToLocalStorage("confidenceMode", nosave);
   }
   saveToLocalStorage("stopOnError", nosave);
   ConfigEvent.dispatch("stopOnError", config.stopOnError, nosave);
@@ -634,9 +641,7 @@ export function setAds(val: MonkeyTypes.Ads, nosave?: boolean): boolean {
   config.ads = val;
   saveToLocalStorage("ads", nosave);
   if (!nosave) {
-    setTimeout(() => {
-      location.reload();
-    }, 3000);
+    reloadAfter(3);
     Notifications.add("Ad settings changed. Refreshing...", 0);
   }
   ConfigEvent.dispatch("ads", config.ads);
@@ -723,17 +728,17 @@ export function setPageWidth(
   }
 
   config.pageWidth = val;
-  $("#centerContent").removeClass("wide125");
-  $("#centerContent").removeClass("wide150");
-  $("#centerContent").removeClass("wide200");
-  $("#centerContent").removeClass("widemax");
+  $("#contentWrapper").removeClass("wide125");
+  $("#contentWrapper").removeClass("wide150");
+  $("#contentWrapper").removeClass("wide200");
+  $("#contentWrapper").removeClass("widemax");
   $("#app").removeClass("wide125");
   $("#app").removeClass("wide150");
   $("#app").removeClass("wide200");
   $("#app").removeClass("widemax");
 
   if (val !== "100") {
-    $("#centerContent").addClass("wide" + val);
+    $("#contentWrapper").addClass("wide" + val);
     $("#app").addClass("wide" + val);
   }
   saveToLocalStorage("pageWidth", nosave);
@@ -1039,9 +1044,9 @@ export function setKeyTips(keyTips: boolean, nosave?: boolean): boolean {
 
   config.showKeyTips = keyTips;
   if (config.showKeyTips) {
-    $("#bottom .keyTips").removeClass("hidden");
+    $("footer .keyTips").removeClass("hidden");
   } else {
-    $("#bottom .keyTips").addClass("hidden");
+    $("footer .keyTips").addClass("hidden");
   }
   saveToLocalStorage("showKeyTips", nosave);
   ConfigEvent.dispatch("showKeyTips", config.showKeyTips);
@@ -1285,6 +1290,8 @@ export function setConfidenceMode(
   if (config.confidenceMode !== "off") {
     config.freedomMode = false;
     config.stopOnError = "off";
+    saveToLocalStorage("freedomMode", nosave);
+    saveToLocalStorage("stopOnError", nosave);
   }
   saveToLocalStorage("confidenceMode", nosave);
   ConfigEvent.dispatch("confidenceMode", config.confidenceMode, nosave);
@@ -1981,6 +1988,10 @@ function replaceLegacyValues(
   //@ts-ignore
   if (configObj.showAverage === "wpm") {
     configObj.showAverage = "speed";
+  }
+
+  if (typeof configObj.playSoundOnError === "boolean") {
+    configObj.playSoundOnError = configObj.playSoundOnError ? "1" : "off";
   }
 
   return configObj;

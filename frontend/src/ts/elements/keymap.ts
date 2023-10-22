@@ -89,7 +89,7 @@ async function flashKey(key: string, correct?: boolean): Promise<void> {
       .animate(
         {
           color: themecolors.sub,
-          backgroundColor: "transparent",
+          backgroundColor: themecolors.subAlt,
           borderColor: themecolors.sub,
         },
         SlowTimer.get() ? 0 : 500,
@@ -323,7 +323,7 @@ export async function refresh(
   }
 }
 
-ConfigEvent.subscribe((eventKey) => {
+ConfigEvent.subscribe((eventKey, newValue) => {
   if (eventKey === "layout" && Config.keymapLayout === "overrideSync") {
     refresh(Config.keymapLayout);
   }
@@ -334,6 +334,9 @@ ConfigEvent.subscribe((eventKey) => {
     eventKey === "keymapMode"
   ) {
     refresh();
+  }
+  if (eventKey === "keymapMode") {
+    newValue === "off" ? hide() : show();
   }
 });
 

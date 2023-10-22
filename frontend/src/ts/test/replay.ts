@@ -87,7 +87,7 @@ export function pauseReplay(): void {
 
 function playSound(error = false): void {
   if (error) {
-    if (config.playSoundOnError) {
+    if (config.playSoundOnError !== "off") {
       Sound.playError();
     } else {
       Sound.playClick();
@@ -315,12 +315,6 @@ $("#replayWords").on("click", "letter", (event) => {
 
   initializeReplayPrompt();
   loadOldReplay();
-});
-
-$(document).on("keypress", "#watchReplayButton", (event) => {
-  if (event.key === "Enter") {
-    toggleReplayDisplay();
-  }
 });
 
 $(".pageTest").on("click", "#watchReplayButton", () => {

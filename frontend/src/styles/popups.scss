@@ -10,6 +10,9 @@
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 #customTextPopupWrapper {
@@ -205,7 +208,6 @@
 
 #saveCustomTextPopupWrapper {
   #saveCustomTextPopup {
-    color: var(--sub-color);
     background: var(--bg-color);
     border-radius: var(--roundness);
     padding: 2rem;
@@ -413,9 +415,12 @@
     background: var(--bg-color);
     border-radius: var(--roundness);
     padding: 2rem;
-    display: grid;
-    gap: 1rem;
     width: 400px;
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
 
     .title {
       font-size: 1.5rem;
@@ -610,17 +615,10 @@
       margin-top: 0.25rem;
       display: grid;
       gap: 1rem;
-      grid-template-columns: 1fr 1fr;
-      .openSettings {
-        grid-column: span 2;
-      }
     }
     .settings {
       display: grid;
       gap: 1rem;
-      .customTextCheckbox {
-        background: var(--sub-color);
-      }
       .cookie label {
         display: grid;
         gap: 0 1rem;
@@ -635,9 +633,10 @@
         .description {
           grid-area: description;
         }
-        .customTextCheckbox {
-          place-self: center;
+        input[type="checkbox"] {
+          align-self: center;
           grid-area: check;
+          font-size: 2em;
         }
       }
       .cookie.ads label {
@@ -1436,15 +1435,6 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .checkbox {
-      display: flex;
-      align-items: center;
-    }
-
-    .checkbox input[type="checkbox"] {
-      margin-right: 0.5em;
-    }
-
     .title {
       font-size: 1.5rem;
       line-height: 2rem;
@@ -1577,6 +1567,12 @@
       color: var(--sub-color);
     }
   }
+}
+
+#tagsEdit form,
+#presetEdit form {
+  display: grid;
+  gap: 1rem;
 }
 
 #editProfilePopup {

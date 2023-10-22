@@ -236,14 +236,14 @@ function apply(): void {
   //replace zero width characters
   text = text.replace(/[\u200B-\u200D\u2060\uFEFF]/g, "");
 
-  text = text.replace(/\\\\t/gm, "\t");
-  text = text.replace(/\\\\n/gm, "\n");
-  text = text.replace(/\\t/gm, "\t");
-  text = text.replace(/\\n/gm, "\n");
+  if ($(`${popup} .replaceControlCharacters input`).prop("checked")) {
+    text = text.replace(/([^\\]|^)\\t/gm, "$1\t");
+    text = text.replace(/([^\\]|^)\\n/gm, "$1\n");
+    text = text.replace(/\\\\t/gm, "\\t");
+    text = text.replace(/\\\\n/gm, "\\n");
+  }
+
   text = text.replace(/ +/gm, " ");
-  // text = text.replace(/(\r\n)+/g, "\r\n");
-  // text = text.replace(/(\n)+/g, "\n");
-  // text = text.replace(/(\r)+/g, "\r");
   text = text.replace(/( *(\r\n|\r|\n) *)/g, "\n ");
   if ($(`${popup} .typographyCheck input`).prop("checked")) {
     text = Misc.cleanTypographySymbols(text);
@@ -266,7 +266,8 @@ function apply(): void {
     }
   }
 
-  CustomText.setText(text.split(CustomText.delimiter));
+  const words = text.split(CustomText.delimiter).filter((word) => word !== "");
+  CustomText.setText(words);
 
   CustomText.setWord(
     parseInt(($(`${popup} .wordcount input`).val() as string) || "-1")

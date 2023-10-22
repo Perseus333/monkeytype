@@ -452,6 +452,7 @@
   ["dramatization", "dramatisation"],
   ["yodeler", "yodeller"],
   ["apologize", "apologise"],
+  ["apologized", "apologised"],
   ["blond", "blonde"],
   ["oxidize", "oxidise"],
   ["extemporize", "extemporise"],
@@ -613,5 +614,10 @@
   ["judgments", "judgements"],
   ["paneling", "panelling"],
   ["defenses", "defences"],
-  ["criticizing", "criticising"]
+  ["criticizing", "criticising"],
+  ["mustache", "moustache"],
+  ["emphasize", "emphasise"],
+  ["emphasized", "emphasised"],
+  ["emphasizes", "emphasises"],
+  ["emphasizing", "emphasising"]
 ]

@@ -6,7 +6,7 @@ import * as NotificationEvent from "../observables/notification-event";
 
 function updateMargin(): void {
   const height = $("#bannerCenter").height() as number;
-  $("#centerContent").css(
+  $("#contentWrapper").css(
     "padding-top",
     height + Misc.convertRemToPixels(2) + "px"
   );
@@ -153,7 +153,7 @@ class Notification {
             });
           }
         );
-      $(`#notificationCenter .notif[id='${this.id}']`).hover(() => {
+      $(`#notificationCenter .notif[id='${this.id}']`).on("hover", () => {
         $(`#notificationCenter .notif[id='${this.id}']`).toggleClass("hover");
       });
     } else if (this.type === "banner") {
@@ -258,19 +258,10 @@ function updateClearAllButton(): void {
   }
 }
 
-interface AddNotificationOptions {
-  important?: boolean;
-  duration?: number;
-  customTitle?: string;
-  customIcon?: string;
-  closeCallback?: () => void;
-  allowHTML?: boolean;
-}
-
 export function add(
   message: string,
   level = 0,
-  options: AddNotificationOptions = {}
+  options: MonkeyTypes.AddNotificationOptions = {}
 ): void {
   NotificationEvent.dispatch(message, level, options.customTitle);
 

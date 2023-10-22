@@ -27,6 +27,15 @@ declare namespace MonkeyTypes {
     languages: string[];
   }
 
+  interface AddNotificationOptions {
+    important?: boolean;
+    duration?: number;
+    customTitle?: string;
+    customIcon?: string;
+    closeCallback?: () => void;
+    allowHTML?: boolean;
+  }
+
   type Accents = [string, string][];
 
   interface LanguageObject {
@@ -129,6 +138,8 @@ declare namespace MonkeyTypes {
     | "12"
     | "13";
 
+  type PlaySoundOnError = "off" | "1" | "2" | "3";
+
   type SoundVolume = "0.1" | "0.5" | "1.0";
 
   type PaceCaret = "off" | "average" | "pb" | "last" | "custom" | "daily";
@@ -217,6 +228,8 @@ declare namespace MonkeyTypes {
 
   type FunboxWordsFrequency = "normal" | "zipf";
 
+  type FunboxWordOrder = "normal" | "reverse";
+
   type FunboxProperty =
     | "symmetricChars"
     | "conflictsWithSymmetricChars"
@@ -233,7 +246,8 @@ declare namespace MonkeyTypes {
     | "nospace"
     | `toPush:${number}`
     | "noInfiniteDuration"
-    | "changesWordsFrequency";
+    | "changesWordsFrequency"
+    | `wordOrder:${FunboxWordOrder}`;
 
   interface FunboxFunctions {
     getWord?: (wordset?: Misc.Wordset, wordIndex?: number) => string;
@@ -461,7 +475,7 @@ declare namespace MonkeyTypes {
     alwaysShowWordsHistory: boolean;
     singleListCommandLine: SingleListCommandLine;
     capsLockWarning: boolean;
-    playSoundOnError: boolean;
+    playSoundOnError: PlaySoundOnError;
     playSoundOnClick: PlaySoundOnClick;
     soundVolume: SoundVolume;
     startGraphsAtZero: boolean;
@@ -894,7 +908,7 @@ declare namespace MonkeyTypes {
   interface TypingSpeedUnitSettings {
     fromWpm: (number) => number;
     toWpm: (number) => number;
-    convertWithUnitSuffix: (number) => string;
+    convertWithUnitSuffix: (number, boolean) => string;
     fullUnitString: string;
     histogramDataBucketSize: number;
     historyStepSize: number;
